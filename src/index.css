@@ -11,3 +11,7 @@
 .python-icon path:nth-child(2) {
   color: #FFD43B !important;
 }
+
+html {
+  scroll-behavior: smooth;
+}

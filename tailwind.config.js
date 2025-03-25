@@ -8,8 +8,13 @@ export default {
     extend: {
       animation: {
         'gradient-text': 'gradient-text 5s ease infinite',
+        shine: 'shine 5s linear infinite',
       },
       keyframes: {
+        shine: {
+        '0%': { 'background-position': '100%' },
+        '100%': { 'background-position': '-100%' },
+        },
         'gradient-text': {
           '0%, 100%': {
             'background-position': '0% 70%',

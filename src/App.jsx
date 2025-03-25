@@ -7,6 +7,7 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Particles from "./components/Particles/Particles";
+import BackToTopButton from "./components/BackToTop/BackToTopButton";
 
 const App = () => {
   return (
@@ -33,6 +34,7 @@ const App = () => {
           <Experience />
           <Projects />
           <Contact />
+          <BackToTopButton />
         </div>
     </div>
   );

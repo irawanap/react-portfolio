@@ -3,6 +3,7 @@ import React from 'react'
 import { HERO_CONTENT } from '../constants';
 import foto1 from '../assets/myimage.png'
 import { motion } from 'framer-motion';
+import ShinyText from './ShinyText/ShinyText';
 // import Lanyard from './lanyard/Lanyard';
 
 
@@ -44,6 +45,13 @@ const Hero = () => {
                         className="my-2 max-w-xl py-6 font-light tracking-tighter">
                             {HERO_CONTENT}
                     </motion.p>
+                    <ShinyText
+                        text="Download Resume!" 
+                        href="https://acesse.one/resume-irawan" 
+                        speed={3} 
+                        withBorder={true}
+                        animationDelay={1.5}
+                    />
                 </div>
             </div>
             <div className="w-full lg:w-1/2 lg:p-8">

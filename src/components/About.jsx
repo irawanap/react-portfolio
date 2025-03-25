@@ -3,6 +3,7 @@ import React from 'react'
 import ava from '../assets/aboutPic1.jpg';
 import { ABOUT_TEXT } from '../constants';
 import { motion } from 'framer-motion';
+import TiltedCard from './TitltedCard/TiltedCard';
 
 const About = () => {
   return (
@@ -26,7 +27,25 @@ const About = () => {
             className="w-full lg:w-1/2 lg:p-8"
             >
                 <div className="flex items-center justify-center">
-                    <img className="rounded-2xl w-64" src={ava} alt="about" />
+                <TiltedCard
+                    imageSrc={ava}
+                    altText="Irawan Aji - Album Cover"
+                    captionText="Irawan Aji"
+                    containerHeight="300px"
+                    containerWidth="300px"
+                    imageHeight="300px"
+                    imageWidth="300px"
+                    rotateAmplitude={12}
+                    scaleOnHover={1.2}
+                    showMobileWarning={false}
+                    showTooltip={true}
+                    displayOverlayContent={true}
+                    overlayContent={
+                        <p className="">
+                        
+                        </p>
+                    }
+                    />
                 </div>
             </motion.div>
             <motion.div 
